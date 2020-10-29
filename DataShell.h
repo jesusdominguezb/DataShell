@@ -91,6 +91,38 @@ EXTERN void controlador_Proceso(char * archivo);
 EXTERN FILE *  modelo_Abre_Archivo(char * nombre_archivo);
 
 
+/*
+ *
+ * La funcion modelo_Valida_Nombre validarà si el nombre de archivo ingresado por el usuario es correcto.
+ *
+ * @params
+ *     nombre_archivo (char *):
+            nombre del archivo que se validarà
+
+ * @returns
+        Entero de confirmaciòn de si es correcto o no
+*/
+
+
+EXTERN int modelo_Valida_Nombre(char * nombre_archivo);
+
+
+/*
+ *
+ * La funcion vista_Error_Menos1 mostrarà un mensaje de error indicando que deberìa hacer para corregirlo.
+ *
+ * @params
+ *     none
+
+ * @returns
+        none
+*/
+
+
+EXTERN void vista_Error_Menos1(void);
+
+
+
 
 #undef DataShell_IMPORT
 #undef EXTERN
