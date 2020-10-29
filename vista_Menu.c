@@ -9,8 +9,7 @@ void vista_Menu()
   
   printf("\n\n\tHola y bienvenido.");
   printf("\n\nNombre del archivo: ");
-
-  fgets(nombre_archivo, TAMANO, stdin);
+  fgets(nombre_archivo,TAMANO,stdin);
 
   controlador_Proceso(nombre_archivo);
 }

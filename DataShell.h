@@ -88,7 +88,7 @@ EXTERN void controlador_Proceso(char * archivo);
 */
 
 
-EXTERN FILE *  modelo_Abre_Archivo(char * nombre_archivo);
+EXTERN FILE * modelo_Abre_Archivo(char * nombre_archivo);
 
 
 /*
@@ -109,6 +109,22 @@ EXTERN int modelo_Valida_Nombre(char * nombre_archivo);
 
 /*
  *
+ * La funcion modelo_Correcion_Nombre cambiarà el \n leido por fgets por un \0
+ *
+ * @params
+ *     nombre_archivo (char *):
+            nombre del archivo a corregir
+
+ * @returns
+        none
+*/
+
+
+EXTERN void modelo_Correcion_Nombre(char * nombre_archivo);
+
+
+/*
+ *
  * La funcion vista_Error_Menos1 mostrarà un mensaje de error indicando que deberìa hacer para corregirlo.
  *
  * @params
@@ -120,6 +136,21 @@ EXTERN int modelo_Valida_Nombre(char * nombre_archivo);
 
 
 EXTERN void vista_Error_Menos1(void);
+
+
+/*
+ *
+ * La funcion vista_Error_Apertura_Archivo mostrarà un mensaje de error indicando que deberìa hacer para corregirlo.
+ *
+ * @params
+ *     none
+
+ * @returns
+        none
+*/
+
+
+EXTERN void vista_Error_Apertura_Archivo(void);
 
 
 
