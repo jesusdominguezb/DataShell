@@ -1,6 +1,6 @@
 #include "DataShell.h"
 
-void modelo_Correcion_Nombre(char * nombre_archivo)
+void modelo_Correccion_Nombre(char * nombre_archivo)
 {
   size_t ln = strlen(nombre_archivo)-1;
 

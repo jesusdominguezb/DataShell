@@ -120,7 +120,25 @@ EXTERN int modelo_Valida_Nombre(char * nombre_archivo);
 */
 
 
-EXTERN void modelo_Correcion_Nombre(char * nombre_archivo);
+EXTERN void modelo_Correccion_Nombre(char * nombre_archivo);
+
+
+
+/*
+ *
+ * La funcion vista_modelo_Tokenizer separara la cadena en cada coma.
+ *
+ * @params
+ *     linea (char):
+        cadena que va a separar
+
+ * @returns
+        none
+*/
+
+
+EXTERN void modelo_Tokenizer(char * linea);
+
 
 
 /*
@@ -133,6 +151,7 @@ EXTERN void modelo_Correcion_Nombre(char * nombre_archivo);
  * @returns
         none
 */
+
 
 
 EXTERN void vista_Error_Menos1(void);
