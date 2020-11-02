@@ -120,7 +120,41 @@ EXTERN int modelo_Valida_Nombre(char * nombre_archivo);
 */
 
 
-EXTERN void modelo_Correcion_Nombre(char * nombre_archivo);
+EXTERN void modelo_Correccion_Nombre(char * nombre_archivo);
+
+
+
+/*
+ *
+ * La funcion modelo_Tokenizer separara la cadena en cada coma.
+ *
+ * @params
+ *     linea (char *):
+        cadena que va a separar
+
+ * @returns
+        puntero con al arreglo de datos separados para ser metidos a la matriz de datos.
+*/
+
+
+EXTERN float * modelo_Tokenizer(char * linea, float * buffer);
+
+
+/*
+ *
+ * La funcion modelo_Columnas nos permite calcular la cantidad de columnas presentes en el archivo leido.
+ *
+ * @params
+ *     linea (char *):
+        cadena con la que se calcularàn las columnas presentes
+
+ * @returns
+        cantidad de columnas en el archivo
+*/
+
+
+EXTERN size_t modelo_Columnas(char * linea);
+
 
 
 /*
@@ -133,6 +167,7 @@ EXTERN void modelo_Correcion_Nombre(char * nombre_archivo);
  * @returns
         none
 */
+
 
 
 EXTERN void vista_Error_Menos1(void);
