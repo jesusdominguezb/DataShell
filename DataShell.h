@@ -187,7 +187,20 @@ EXTERN void vista_Error_Menos1(void);
 
 EXTERN void vista_Error_Apertura_Archivo(void);
 
+/*
+ *
+ * La funcion controlador_linea quita las comas de la linea y los sustituye por espacios.
+ *
+ * @params
+ *fila (char *):
+        cadena que se sustituira las comas.
 
+ * @returns
+        apuntador a al arreglo que se edito.
+*/
+
+
+EXTERN char *controlador_linea(char fila[]);
 
 
 #undef DataShell_IMPORT

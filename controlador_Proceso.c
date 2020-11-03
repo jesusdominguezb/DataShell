@@ -37,13 +37,7 @@ void controlador_Proceso(char * archivo)
       fscanf(archivo_lectura,"%s\n",linea_leida);
 
       //Lo siquiente hay que separarlo en un modulo aparte
-      for(i=0 ; i<strlen(linea_leida) ; i++)
-	{
-	  if(linea_leida[i] == ',') 
-	    {
-	      linea_leida[i] = ' ';
-	    }
-	}
+      strcpy(linea_leida, controlador_linea(linea_leida));
 
       //La separamos
       Matriz_Datos[count] = modelo_Tokenizer(linea_leida,buffer);
