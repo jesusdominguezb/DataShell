@@ -36,7 +36,7 @@ void controlador_Proceso(char * archivo)
       //Leemos una linea del archivo.
       fscanf(archivo_lectura,"%s\n",linea_leida);
 
-      //Lo siquiente hay que separarlo en un modulo aparte
+      //Adecua la cadena para que sea tokenizada
       strcpy(linea_leida, controlador_linea(linea_leida));
 
       //La separamos
